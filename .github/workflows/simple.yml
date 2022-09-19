@@ -23,12 +23,3 @@ jobs:
           print
           (platform.processor())
         shell: python
-  run-mac-commands:
-    runs-on: mac-latest
-    needs: ["run-shell-command"]
-    steps:
-      - name: Directory PowerShell
-        run: Get-Location 
-      - name: Directory Bash 
-        run: pwd 
-        shell: bash 
