@@ -23,11 +23,11 @@ jobs:
           print
           (platform.processor())
         shell: python
-  run-bash-commands:
-    runs-on: bash-latest
+  run-macOS-commands:
+    runs-on: macOS-latest
     needs: ["run-bash-command"]
     steps:
-      - name: Directory Bash
+      - name: Directory sh
         run: Get-Location 
       - name: Directory Bash 
         run: pwd 
