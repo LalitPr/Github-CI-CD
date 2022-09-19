@@ -25,7 +25,6 @@ jobs:
         shell: python
   run-shell-commands:
     runs-on: ubuntu-latest
-    needs: ["run-sh-commands"]
     steps:
       - name: Directory sh
         run: Get-Location 
