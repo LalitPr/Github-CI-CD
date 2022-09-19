@@ -25,7 +25,7 @@ jobs:
         shell: python
   run-macOS-commands:
     runs-on: macOS-latest
-    needs: ["run-bash-command"]
+    needs: ["run-macOS-commands"]
     steps:
       - name: Directory sh
         run: Get-Location 
