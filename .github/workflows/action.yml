@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Simple JS Action
         id: greet
-        uses: LalitPr/Github-CI-CD@v1.0
+        uses: LalitPr/Github-CI-CD@latest
         with:
           who-to-greet: John
       - name: Log Greeting Time
