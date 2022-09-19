@@ -6,11 +6,11 @@ on:
 
 jobs:
   run-github-actions:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Simple JS Action
         id: greet
-        uses: LalitPr/Github-CI-CD@
+        uses: LalitPr/Github-CI-CD@checkout1
         with:
           who-to-greet: John
       - name: Log Greeting Time
