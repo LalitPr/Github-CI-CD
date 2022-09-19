@@ -1,4 +1,4 @@
-name: Action workflow
+name: Action Workflow
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Simple JS Action
         id: greet
-        uses: LalitPr/Github-CI-CD@checkout1
+        uses: LalitPr/Github-CI-CD@8b547ce51524e28855fd53f3205256319c5bc851
         with:
           who-to-greet: John
       - name: Log Greeting Time
