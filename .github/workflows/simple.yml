@@ -24,7 +24,7 @@ jobs:
           (platform.processor())
         shell: python
   run-bash-commands:
-    runs-on: windows-latest
+    runs-on: bash-latest
     needs: ["run-bash-command"]
     steps:
       - name: Directory Bash
