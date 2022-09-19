@@ -23,6 +23,15 @@ jobs:
           print
           (platform.processor())
         shell: python
+  run-bash-commands:
+    runs-on: windows-latest
+    needs: ["run-bash-command"]
+    steps:
+      - name: Directory Bash
+        run: Get-Location 
+      - name: Directory Bash 
+        run: pwd 
+        shell: bash 
 
  
 
