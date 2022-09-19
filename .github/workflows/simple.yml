@@ -23,8 +23,8 @@ jobs:
           print
           (platform.processor())
         shell: python
-  run-windwos-commands:
-    runs-on: windows-latest
+  run-mac-commands:
+    runs-on: mac-latest
     needs: ["run-shell-command"]
     steps:
       - name: Directory PowerShell
